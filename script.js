@@ -2,8 +2,7 @@ function klik() {
     clear()
     path();
     angka();
-   
-    rumus()
+    rumus();
 }
 
 function validateInput(x, y) {
@@ -202,8 +201,8 @@ function rumus() {
         return; // Jika input tidak valid, hentikan eksekusi fungsi angka
     }
 
-    let pangkat1 = -x * z;
-    let pangkat2 = -y * z;
+    let pangkat1 = -x / z;
+    let pangkat2 = -y / z;
 
     let hasil1 = 1 - Math.pow(Math.E, pangkat1);
     let hasil2 = Math.pow(Math.E, pangkat2);
@@ -214,14 +213,14 @@ function rumus() {
     div.innerHTML = ""; // Clear previous results
 
     let h3Baru1 = document.createElement('h3');
-    h3Baru1.textContent = `Hasil 1: ${hasil1.toFixed(4)}`;
+    h3Baru1.textContent = `PDF pada nilai x1 :<br>${hasil1.toFixed(4)}`;
     div.appendChild(h3Baru1);
 
     let h3Baru2 = document.createElement('h3');
-    h3Baru2.textContent = `Hasil 2: ${hasil2.toFixed(4)}`;
+    h3Baru2.textContent = `PDF pada nilai x2 :<br>${hasil2.toFixed(4)}`;
     div.appendChild(h3Baru2);
 
     let h3Baru3 = document.createElement('h3');
-    h3Baru3.textContent = `Hasil 3: ${hasil3.toFixed(4)}`;
+    h3Baru3.textContent = `Selisih Interval antara nilai x1 dan x2 :<br>${hasil3.toFixed(4)}`;
     div.appendChild(h3Baru3);
 }
