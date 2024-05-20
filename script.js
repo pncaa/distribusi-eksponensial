@@ -212,15 +212,15 @@ function rumus() {
     let div = document.getElementById('bc');
     div.innerHTML = ""; // Clear previous results
 
-    let h3Baru1 = document.createElement('h3');
-    h3Baru1.textContent = `PDF pada nilai x1 : ${hasil1.toFixed(4)}`;
+    let h3Baru1 = document.createElement('h4');
+    h3Baru1.innerHTML = `P(X ≤ x<sub>0</sub>) : ${hasil1.toFixed(4)}`;
     div.appendChild(h3Baru1);
 
-    let h3Baru2 = document.createElement('h3');
-    h3Baru2.textContent = `PDF pada nilai x2 : ${hasil2.toFixed(4)}`;
+    let h3Baru2 = document.createElement('h4');
+    h3Baru2.innerHTML = `P(X > x<sub>0</sub>) :${hasil2.toFixed(4)}`;
     div.appendChild(h3Baru2);
 
-    let h3Baru3 = document.createElement('h3');
-    h3Baru3.textContent = `Selisih Interval antara nilai x1 dan x2 : ${hasil3.toFixed(4)}`;
+    let h3Baru3 = document.createElement('h4');
+    h3Baru3.innerHTML = `P(X ≤ x<sub>0</sub>) - P(X ≤ x<sub>0</sub>) :${hasil3.toFixed(4)}`;
     div.appendChild(h3Baru3);
 }
